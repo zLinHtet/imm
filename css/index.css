@@ -1,0 +1,117 @@
+@font-face {
+    font-family: 'GilroyMedium';
+    src: url('../fonts/Gilroy-Medium.ttf') format('truetype');    
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'GilroyRegular';
+    src: url('../fonts/Gilroy-Regular.ttf') format('truetype');    
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face{
+    font-family: 'MyanmarSabae';    
+    src: url('../fonts/MyanmarSabaeRegular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+body,div{
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.4px;
+    font-family: "MyanmarSabae", sans-serif;
+}
+.container{
+    max-width: 1190px !important;
+}
+.custom-box-shadow {
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.05);        
+}
+.custom-box-shadow-md{
+    box-shadow: 0px 0px 10px 0px rgba(67, 70, 86, 0.15);    
+}
+.custom-box-shadow-sm{
+    box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.15);
+}
+.search_width {
+    width: 100%;
+}
+.download_phone{
+    background-image: url("../images/download_phone.png");      
+    height: 240px;
+    background-repeat: no-repeat;
+}
+
+/* SWIPER  */
+.swiper {
+    width: 100%;
+    height: 352px;
+    border-radius: 24px;
+    box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.15);
+  }
+.swiper-slide img {
+    height: 352px;
+}
+.swiper-button-next, .swiper-button-prev {
+    position: absolute;
+    top: var(--swiper-navigation-top-offset, 50%);
+    width: 40px;
+    height: 40px;
+    margin-top: calc(0px -(var(--swiper-navigation-size) / 2));
+    z-index: 10;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgba(18, 12, 11, 1);    
+    padding: 8px;    
+    box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.15);
+    background: linear-gradient(260.91deg, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0.4) 100%),linear-gradient(0deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2));
+    border-radius: 50%;
+}
+.swiper-button-next:after, .swiper-button-prev:after {
+    font-size: 16px;
+}
+.swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {        
+    width: auto;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.swiper-pagination {    
+    background: linear-gradient(260.91deg, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0.4) 100%),linear-gradient(0deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2));
+    padding: 0px 8px;
+    border-radius: 24px;
+}
+/* END SWIPER  */
+
+[multiple]:focus, [type=date]:focus, [type=datetime-local]:focus, [type=email]:focus, [type=month]:focus, [type=number]:focus, [type=password]:focus, [type=search]:focus, [type=tel]:focus, [type=text]:focus, [type=time]:focus, [type=url]:focus, [type=week]:focus, select:focus, textarea:focus {
+    border-color: transparent !important;
+}
+/* START CHECKBOX */
+[type=checkbox], [type=radio] {    
+    color: #F68A1F;
+    height: 20px;
+    width: 20px;
+}
+[type=checkbox]:focus, [type=radio]:focus {    
+    --tw-ring-shadow: 0;    
+}
+/* END CHECKBOX */
+
+/* START LISTING  */
+
+/* END LISTING  */
+
+
+
+
+
+
+
+
+@media (min-width: 991px) {
+    .search_width {
+        width: 54%;
+    }
+}
