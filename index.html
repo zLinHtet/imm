@@ -307,7 +307,7 @@
                     </svg>                                 
                     <div>Download our App</div>
                 </div>
-                <div class="test-div absolute w-full bg-bg_color custom-box-shadow-sm rounded-3xl overflow-hidden pt-2 hidden" id="download_phone_box">
+                <div class="absolute w-full bg-bg_color custom-box-shadow-sm rounded-3xl overflow-hidden pt-2 hidden" id="download_phone_box">
                     <div class="text-center mb-2 text-primary">Download our App!</div>
                     <div class="relative">
                         <div class="download_phone">
@@ -1592,57 +1592,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        primary: '#F68A1F',
-                        primary_text: '#120C0B',
-                        secondary_text: '#A09E9D',
-                        stroke: '#E7E6E6',
-                        hover: '#EBE8EA',
-                        bg_color: '#FFFCFE',
-                        footer: '#EEEEEE',
-                        language: '#F2EFF1',
-                        btn_hover: '#C56E19'
-                    },
-                    borderRadius:{
-                        'custom': '40px',
-                    },
-                }
-            }
-        }
-
-        $(document).ready(function(){
-            $("#download_phone").click(function(){
-                $("#download_phone_box").toggle();
-            });
-        });
-
-        const swiper = new Swiper('.swiper', {
-        // Optional parameters
-        direction: 'horizontal',
-        loop: true,
-
-        // If we need pagination
-        pagination: {
-            el: '.swiper-pagination',
-        },
-
-        // Navigation arrows
-        navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
-        },
-
-        // And if we need scrollbar
-        scrollbar: {
-            el: '.swiper-scrollbar',
-        },
-        });
-
-
-    </script>
+    <script src="js/index.js"></script>    
 </body>
 </html>

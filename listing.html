@@ -641,41 +641,7 @@
         integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        primary: '#F68A1F',
-                        primary_text: '#120C0B',
-                        secondary_text: '#A09E9D',
-                        stroke: '#E7E6E6',
-                        hover: '#EBE8EA',
-                        bg_color: '#FFFCFE',
-                        footer: '#EEEEEE',
-                        language: '#F2EFF1',
-                        btn_hover: '#C56E19'
-                    },
-                    borderRadius: {
-                        'custom': '40px',
-                    },
-                }
-            }
-        }
-        $(document).ready(function() {        
-            $('#filter_dropdown').click(function(event) {
-                event.stopPropagation();
-                $('.down_arrow').toggle();
-                $('.up_arrow').toggle();
-            });            
-            $(document).click(function(event) {
-                if (!$(event.target).closest('#filter_dropdown').length) {                    
-                    $('.down_arrow').show();
-                    $('.up_arrow').hide();
-                }
-            });
-        });
-    </script>
+    <script src="js/index.js"></script>
 </body>
 
 </html>
