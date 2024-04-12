@@ -11,7 +11,8 @@ tailwind.config = {
                 bg_color: '#FFFCFE',
                 footer: '#EEEEEE',
                 language: '#F2EFF1',
-                btn_hover: '#C56E19'
+                btn_hover: '#C56E19',
+                btn_sec_hover: '#E76C0F',
             },
             borderRadius: {
                 'custom': '40px',
@@ -28,26 +29,51 @@ $(document).ready(function(){
 });
 
 const swiper = new Swiper('.swiper', {
-direction: 'horizontal',
-speed: 600,
-autoplay: {
-    delay: 2000,
-  },
-loop: true,
+    direction: 'horizontal',
+    speed: 600,
+    autoplay: {
+        delay: 2000,
+    },
+    loop: true,
 
-pagination: {
-    el: '.swiper-pagination',
-},
+    pagination: {
+        el: '.swiper-pagination',
+    },
 
-navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-},
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
 
-// And if we need scrollbar
-scrollbar: {
-    el: '.swiper-scrollbar',
-},
+    // And if we need scrollbar
+    scrollbar: {
+        el: '.swiper-scrollbar',
+    },
+});
+
+const thumbsSwiper = new Swiper('.swiper_thumbs', {
+    direction: 'horizontal',
+    speed: 600,
+    autoplay: {
+        delay: 2000,
+    },
+    loop: true,
+    thumbs: {
+        swiper: thumbsSwiper
+    },
+    pagination: {
+        el: '.swiper-pagination',
+    },
+
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+
+    // And if we need scrollbar
+    scrollbar: {
+        el: '.swiper-scrollbar',
+    },
 });
 // END INDEX
 
